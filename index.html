@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro">
+      <h1 id="title">University life Survey <i class="fa fa-university"></i></h1>
+      <p id="description"> This survey help us to understand how do you feel about university </p>
+   </div> 
+   <hr/>
+    <form  method="post" action="https://script.google.com/macros/s/AKfycbxy4zseRYsYl31jJktXc5jjzyN7qzOjLnhpvjmF_RzdWuS2ZVymvGEyM2rbBFkDJ_Em-A/exec" id="survey-form">
+      <label id="name-label" for="name">Name <i class="fa fa-id-card" aria-hidden="true"></i> * <input type="text" required id="name" placeholder="Enter your name" /></label> 
+      <label id="email-label" for="email"> Email <i class="fa fa-envelope"> *</i><input required id="email" placeholder="Enter your email" type="email"/></label> 
+    <label id="number-label" for="number"> UniversityRollNo <i class="fa fa-hourglass"></i>  <input id="number"placeholder="Enter your UniversityRollNo " type="number" min="15" /></label> Which of these course you enroll? <i class="fa fa-graduation-cap"></i>
+      <select id="dropdown">
+        <option>B.Tech</option>
+        <option>B.Sc</option>
+        <option>BCA</option>
+        <option>MBA</option>
+        <option>MCA</option>
+        <option>BBA</option>
+        <option>B.Pharma</option>
+        <option>Master of Business Administration (MBA)</option>
+        <option>Master of Science (M.Sc)</option>
+        <option>Master of Laws (L.L.M)</option>
+        <option>Master of Technology (M.Tech)</option>
+        <option>Master of Pharmacy (M.Pharm)</option>
+      </select> 
+           <label>Write something about yourself, and your university life *
+        </label> 
+        <textarea required></textarea>
+      <label>How did you Rate Your university life?</label>
+      <div class="radio-button">
+        <label><input value="easy-hard" name="easy-hard" type="radio" /> Good</label>
+        <label><input value="easy-hard" name="easy-hard" type="radio" /> Average</label>
+        <label><input value="easy-hard" name="easy-hard" type="radio" /> Bad</label>
+      </div>
+
+      <label>How can we improve it?</label> 
+      <div class="checkbox">
+   
+        <label> <textarea></textarea></label>
+        </div> 
+ 
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  
+ </body>
+
+</html>
